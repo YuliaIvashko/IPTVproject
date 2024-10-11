@@ -1,6 +1,4 @@
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,11 +14,33 @@ img {
   max-width: 50%;
 }
 
-.header {
-    background-image: url("/img/background.png");
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
-    height: 850px;
-  }
+h1,
+h2,
+h3,
+h4 p {
+  color: #222;
+}
 
+section {
+  padding: 0 120px;
+}
+
+.header {
+  background-image: url("/img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1440px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
+}
+
+.img-logo {
+  width: 160px; /* Можеш змінити розмір логотипа */
+  height: auto; /* Автоматична висота для збереження пропорцій */
+}
+
+.menu {
+  flex-direction: row;
+  flex: 1px;
+}
